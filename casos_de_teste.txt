@@ -1,0 +1,72 @@
+Aluna: Juliana de Oliveira
+
+UC-02: Realizar soma com sucesso
+
+- Descrição: Verificar se o sistema realiza corretamente a soma de dois números positivos.
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de soma;
+    3. Insere outro número positivo;
+    4. Usuário pressiona "="
+- Dados de entrada: 5, +, 2
+- Resultado esperado: O sistema exibe um valor válido e positivo (7)
+
+
+UC-03: Realizar subtração com sucesso
+- Descrição: Verificar se o sistema realiza corretamente a subtração de dois números positivos.
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de subtração;
+    3. Insere outro número positivo;
+    4. Usuário pressiona "="
+- Dados de entrada:9, -, 5
+- Resultado esperado: O sistema exibe um valor válido (4)
+
+
+UC-04: Realizar multiplicação com sucesso
+- Descrição: Verificar se o sistema realiza corretamente a multiplicação de dois números positivos.
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de multiplicação;
+    3. Insere outro número positivo;
+    4. Usuário pressiona "="
+- Dados de entrada:10, *, 2 
+- Resultado esperado: O sistema exibe um valor válido (20)
+
+
+UC-05: Realizar divisão com sucesso
+- Descrição: Verificar se o sistema realiza corretamente a divisão de dois números positivos.
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de divisão;
+    3. Insere outro número positivo;
+    4. Usuário pressiona "="
+- Dados de entrada:25, /, 5
+- Resultado esperado: O sistema exibe um valor válido (5)
+
+
+UC-05: Divisão por zero (Fluxo alternativo 5a)
+- Descrição: Verificar se o sistema exibe validação ao dividir um número por zero.
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de divisão;
+    3. Insere o numero 0;
+    4. Usuário pressiona "="
+- Dados de entrada:5, /, 0
+- Resultado esperado: O sistema exibe "Erro: Divisão por zero"
+
+UC-05: Número muito grande (Fluxo alternativo 5b)
+- Descrição: Verificar se o sistema exibe validação ao inserir um número muito grande
+- Pré-condições: Calculadora funcional 
+- Passos: 
+    1. Usuário insere um número muito grande (99999999999);
+    2. Seleciona qualquer operação;
+    3. Digita outro número;
+    4. Usuário pressiona "="
+- Dados de entrada: 99999999999, +, 21
+- Resultado esperado: O sistema exibe "Erro: Overflow"
