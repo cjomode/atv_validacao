@@ -70,3 +70,46 @@ UC-05: Número muito grande (Fluxo alternativo 5b)
     4. Usuário pressiona "="
 - Dados de entrada: 99999999999, +, 21
 - Resultado esperado: O sistema exibe "Erro: Overflow"
+
+UC-06 Partição de Equivalência: Soma de valores negativos
+- Descrição: Verificar se a calculadora realiza corretamente a soma de dois números negativos.
+- Pré-condições: Calculadora funcional.
+- Passos:
+    1. Usuário insere um número negativo;
+    2. Seleciona a operação de soma;
+    3. Insere outro número negativo;
+    4. Usuário pressiona "=".
+- Dados de entrada: -3, +, -2
+- Resultado esperado: O sistema exibe -5.
+
+UC-07 Valor Limite: Soma no limite superior
+- Descrição: Verificar se a calculadora aceita números até o limite definido.
+- Pré-condições: Calculadora funcional.
+- Passos:
+Usuário insere um número próximo ao limite máximo permitido;
+    1. Seleciona a operação de soma;
+    2. Insere outro número pequeno;
+    3. Usuário pressiona "=".
+- Dados de entrada: 5e9, +, 5e9
+- Resultado esperado: O sistema exibe 1e10.
+
+UC-08 Tabela de Decisão: Soma com zero
+- Descrição: Verificar se a calculadora trata corretamente a soma com zero.
+- Pré-condições: Calculadora funcional.
+- Passos:
+    1. Usuário insere um número positivo;
+    2. Seleciona a operação de soma;
+    3. Insere o número 0;
+    4. Usuário pressiona "=".
+- Dados de entrada: 10, +, 0
+- Resultado esperado: O sistema exibe o próprio número inserido.
+
+UC-09 Transição de Estados: Operações encadeadas
+- Descrição: Verificar se o resultado de uma operação pode ser usado na operação seguinte.
+- Pré-condições: Calculadora funcional.
+- Passos:
+    1. Usuário insere 5 e 5, seleciona soma e obtém 10;
+    2. Usa o resultado (10), multiplica por 2 e obtém 20;
+    3. Usa o resultado (20), subtrai 5 e obtém 15.
+- Dados de entrada: (5+5)=10 → (10*2)=20 → (20-5)=15
+- Resultado esperado: O sistema exibe 15.
